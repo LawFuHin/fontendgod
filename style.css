@@ -1,0 +1,244 @@
+:root {
+  --gold: rgba(202, 151, 3);
+}
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    white 50%,
+    rgba(255, 215, 0, 0.5) 80%,
+    rgba(255, 215, 0, 0.9) 100%
+  );
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#input {
+  width: 300px;
+  height: 2em;
+  font-size: 1em;
+  padding: 0px;
+  text-align: center;
+  border: 3px solid gold;
+  border-radius: 15px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#submit:hover {
+  background-color: rgba(255, 215, 0, 0.5);
+}
+
+#input:hover {
+  background-color: rgba(255, 215, 0, 0.5);
+}
+
+#input:focus {
+  outline: none;
+  background-color: rgba(255, 215, 0, 0.5);
+}
+
+#banner {
+  min-height: 4em !important;
+  text-align: center;
+  padding: 0em 0.5em 0em 0.5em;
+}
+
+#response {
+  padding: 1em;
+  max-width: 1200px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* #live {
+  border: 3px solid gold;
+  padding: 0.05em;
+  border-radius: 5px;
+  color: gold;
+  font-size: 0.9em;
+} */
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 100px;
+}
+#jesus {
+  transform: scale(0.9);
+  aspect-ratio: 1/1;
+  width: 300px;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 100px 0px gold, 0px 0px 50px 0px gold;
+}
+#submit {
+  border: 3px solid gold;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 1em;
+  border-radius: 16px;
+  font-size: 18px;
+  color: black;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responseContainer {
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+}
+#response {
+  background: transparent;
+  white-space: pre-line;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+#gif {
+  width: 200px;
+  border-radius: 50%;
+}
+#rip {
+  width: 200px;
+  margin-bottom: 1em;
+}
+
+/* navbar */
+#topnav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#itemsContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  #itemsContainer {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 215, 0, 0.5) 0%,
+      rgba(255, 215, 0, 0.5) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+@media (min-width: 992px) {
+  #itemsContainer {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #itemsContainer {
+    width: 1170px;
+  }
+}
+
+#logo {
+  width: 50px;
+  margin-left: 10px;
+}
+
+#contact {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#contact-text {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+#contact-text:hover {
+  background-color: rgba(255, 215, 0, 0.5);
+}
+
+#logo-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading {
+  margin-bottom: 2em;
+}

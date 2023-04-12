@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./image/bible.png" />
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>線上神父</title>
+  </head>
+  <body>
+    <div class="formContainer" id="top">
+      <div id="topnav">
+        <div id="itemsContainer">
+          <a href="./" id="logo-link">
+            <img src="./image/bible.png" alt="logo" id="logo" />
+            <span style="margin-left: 10px">線上神父</span>
+          </a>
+
+          <a id="contact" href="https://lawfuhin.github.io" target="_blank">
+            <span id="contact-text">聯絡我</span>
+          </a>
+        </div>
+      </div>
+
+      <div style="min-height: 4em">
+        <h1 id="banner"></h1>
+      </div>
+
+      <div id="middle" data-aos="zoom-in" data-aos-duration="3000">
+        <img src="./image/jesus.png" id="jesus" alt="" />
+        <h1>你的線上神父<span id="live">已在線</span></h1>
+        <form id="myForm">
+          <input
+            type="text"
+            id="input"
+            name="input"
+            placeholder="想和神父說的話" />
+          <button type="submit" id="submit">懺悔</button>
+        </form>
+      </div>
+      <div style="color: transparent">&emsp;</div>
+    </div>
+
+    <div class="formContainer2" id="formContainer2" style="display: none">
+      <div class="responseContainer">
+        <h3 id="response"></h3>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+      var typed = new Typed("#banner", {
+        strings: ["將你的事交托耶和華，他就必成全。"],
+        typeSpeed: 200,
+        shuffle: true,
+        showCursor: false,
+      });
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
