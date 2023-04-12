@@ -64,7 +64,7 @@ form.addEventListener("submit", (event) => {
     .then((response) => response.json())
     .then((data) => {
       console.log("god:", data);
-      response.textContent = `你：${inputValue}\n \n${data}`;
+      response.textContent = `你：${inputValue}\n \n神父：${data}`;
       input.value = "";
       display.scrollIntoView({ behavior: "smooth" });
     })
