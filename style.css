@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+* {
+  font-family: "Noto Sans HK", sans-serif !important;
+}
+
 html {
   height: 100%;
   background: radial-gradient(
@@ -24,50 +28,51 @@ html {
 }
 
 .formContainer {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 50vh;
+  margin: 0px !important;
+  padding: 0px !important; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0px !important;
-  padding: 0px !important;
+  min-height: 100vh;
 }
 
 #myForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#input {
-  width: 300px;
-  height: 2em;
-  font-size: 1em;
-  padding: 0px;
-  text-align: center;
-  border: 3px solid gold;
-  border-radius: 15px !important;
-  background-color: rgba(255, 255, 255, 0.8);
-}
 
 #submit:hover {
-  background-color: rgba(255, 215, 0, 0.5);
+  background-color: rgba(255, 215, 0, 0.8);
 }
 
 #input:hover {
-  background-color: rgba(255, 215, 0, 0.5);
+  background-color: rgba(255, 215, 0, 0.2);
 }
 
 #input:focus {
   outline: none;
-  background-color: rgba(255, 215, 0, 0.5);
+  background-color: rgba(255, 215, 0, 0.2);
 }
 
 #banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 4em !important;
   text-align: center;
-  padding: 0em 0.5em 0em 0.5em;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #response {
@@ -92,29 +97,42 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 100px;
+  max-width: 300px;
 }
 #jesus {
   transform: scale(0.9);
-  aspect-ratio: 1/1;
   width: 300px;
-  height: 100%;
+  max-width: 300px;
   border-radius: 50%;
   box-shadow: inset 0px 0px 100px 0px gold, 0px 0px 50px 0px gold;
 }
 #submit {
   border: 3px solid gold;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 1em;
-  border-radius: 16px;
-  font-size: 18px;
+  border-left: none !important;
+  background-color: rgba(255, 215, 0, 0.4);
+  border-radius: 0px 15px 15px 0px;
+  font-size: 16px;
   color: black;
-  width: 80px;
+  width: 100px;
   height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 0px;
+  text-align: center;
+  border: 3px solid gold;
+  border-radius: 15px 0px 0px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
 }
 
 .responseContainer {
@@ -193,6 +211,15 @@ html {
   }
 }
 
+/* @media (max-height: 768px) {
+  #middle {
+    padding-bottom: 30px;
+  }
+  .filling {
+    display: none;
+  }
+} */
+
 @media (min-width: 992px) {
   #itemsContainer {
     width: 970px;
@@ -241,4 +268,11 @@ html {
 
 #loading {
   margin-bottom: 2em;
+}
+
+#middleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0,maximum-scale=1" />
+      content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./image/bible.png" />
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap"
+      rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -42,26 +48,27 @@
         </div>
       </div>
 
-      <div style="min-height: 4em">
-        <h1 id="banner"></h1>
+      <div id="middleContainer">
+        <div id="banner"></div>
+        <div id="middle" data-aos="zoom-in" data-aos-duration="3000">
+          <img src="./image/jesus.png" id="jesus" alt="" />
+          <div style="font-size: 30px; padding: 10px 0em 10px 0em;font-weight: bold;">
+            你的線上神父<span id="live">已在線</span>
+          </div>
+          <form id="myForm">
+            <input
+              type="text"
+              id="input"
+              name="input"
+              placeholder="想和神父說的話" />
+            <button type="submit" id="submit">懺悔</button>
+          </form>
+        </div>
       </div>
 
-      <div id="middle" data-aos="zoom-in" data-aos-duration="3000">
-        <img src="./image/jesus.png" id="jesus" alt="" />
-        <h1>你的線上神父<span id="live">已在線</span></h1>
-        <form id="myForm">
-          <input
-            type="text"
-            id="input"
-            name="input"
-            placeholder="想和神父說的話" />
-          <button type="submit" id="submit">懺悔</button>
-        </form>
+      <div style="color: transparent; font-size: 100px" class="filling">
+        &emsp;
       </div>
-      <div style="color: transparent">&emsp;</div>
-      <div style="color: transparent">&emsp;</div>
-      <div style="color: transparent">&emsp;</div>
-      <div style="color: transparent">&emsp;</div>
     </div>
 
     <div class="formContainer2" id="formContainer2" style="display: none">
@@ -73,9 +80,9 @@
     <script src="./app.js"></script>
     <script>
       var typed = new Typed("#banner", {
-        strings: ["你們不要憂愁，因靠耶和華而得的喜樂是你們的力量。"],
+        strings: ["不要憂愁，靠耶和華而得的喜樂是你的力量。"],
         typeSpeed: 200,
-        startDelay: 4000,
+        startDelay: 3000,
         shuffle: true,
         showCursor: false,
       });
