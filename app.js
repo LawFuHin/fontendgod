@@ -52,9 +52,9 @@ form.addEventListener("submit", (event) => {
     backDelay: 5000,
   });
   const inputValue = input.value;
-  const requestBody = { content: input.value };
+  const requestBody = { message: `你是神父，這是我的懺悔${input.value}，請給我指導` };
 
-  fetch("https://god-u0oi.onrender.com/chat", {
+  fetch("https://chatgpt-k89p.onrender.com/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
